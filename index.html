@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
@@ -25,7 +24,7 @@
                 <div class="input-addon">
                     <i class="material-icons">face</i>
                 </div>
-                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
+                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off" id="username">
             </div>
 
             <div class="clearfix"></div>
@@ -34,7 +33,7 @@
                 <div class="input-addon">
                     <i class="material-icons">vpn_key</i>
                 </div>
-                <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
+                <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off" id="password">
             </div>
 
             <div class="remember-me">
@@ -58,8 +57,55 @@
         </div>
     </div>
 </body>
-
 </html>
+
+
+
+<script>
+	var objPeople = [
+	{ // Object @ 0 index
+		username: "Hunter",
+		password: "hunt7588$"
+	},
+	{ // Object @ 1 index
+		username: "Admin",
+		password: "123"
+	},
+	{ // Object @ 2 index
+		username: "test",
+		password: "test"
+	}
+
+]
+
+function getInfo() {
+	var username = document.getElementById('username').value
+	var password = document.getElementById('password').value
+
+	for(var i = 0; i < objPeople.length; i++) {
+		// check is user input matches username and password of a current index of the objPeople array
+		if(username == objPeople[i].username && password == objPeople[i].password) {
+			alert(username + "'s Login Was Successful")
+            console.log("Login Successful")
+            function Redirect()
+{
+window.location = "https://google.com"
+}
+    
+			// stop the function if this is found to be true
+			return
+            
+		}
+	}
+	alert("incorrect username or password")
+    console.log(username + " is not a UserName or Password")
+
+}
+</script>
+
+
+
+
 <style>
     @import url('https://fonts.googleapis.com/css?family=Raleway');
 body {
