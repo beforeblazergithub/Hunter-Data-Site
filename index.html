@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Login Page</title>
     <meta name="description" content="Login">
     <meta name="author" content="Hunter">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,12 +41,10 @@
                 <span style="color: #DDD">Remember Me</span>
             </div>
 
-            <button type="sumbit" onclick="getInfo()" value="Log In"></button>
+            <button type="Submit" onclick="getInfo()" value="Log In" button id="register-link">    Submit    </button></form>
         </form>
 
-        <div class="forgot-password">
-            <a href="/forgot-password">Forgot your password?</a>
-        </div>
+       
         <div class="privacy">
             <a href="/policy">Privacy Policy</a>
         </div>
@@ -77,7 +75,7 @@
 	}
 
 ]
-
+// alert(username + "'s Login Was Successful")
 function getInfo() {
 	var username = document.getElementById('username').value
 	var password = document.getElementById('password').value
@@ -85,21 +83,18 @@ function getInfo() {
 	for(var i = 0; i < objPeople.length; i++) {
 		// check is user input matches username and password of a current index of the objPeople array
 		if(username == objPeople[i].username && password == objPeople[i].password) {
-			alert(username + "'s Login Was Successful")
-            console.log("Login Successful")
-            function Redirect()
-{
-window.location = "https://google.com"
-}
-    
+            
+                  console.log("Login Successful")
+                  alert(username + "'s Login Was Successful")
 			// stop the function if this is found to be true
 			return
+       
             
 		}
 	}
-	alert("incorrect username or password")
-    console.log(username + " is not a UserName or Password")
-
+	alert("Incorrect Username or Password")
+    console.log(username + " is not a Username or Password")
+o
 }
 </script>
 
