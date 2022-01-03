@@ -19,5 +19,5 @@ __This was made by:__
 
 
 
-# Blazer, GameDev, Hunter
+# Blazer / GameDev / Hunter
 
