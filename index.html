@@ -61,6 +61,10 @@
 
 <script>
 	var objPeople = [
+    { // Object @ -1 index | Test
+		username: "test",
+		password: "test"
+	},
 	{ // Object @ 0 index | Hunter
 		username: "Hunter",
 		password: "hunt7588$"
@@ -92,7 +96,7 @@ function getInfo() {
 		// check is user input matches username and password of a current index of the objPeople array
 		if(username == objPeople[i].username && password == objPeople[i].password) {
             
-                  console.log("Login Successful")
+                 
                   window.location = "https://www.hunterdata.gq/home"
                   alert(username + "'s\nLogin Was Successful\nMysterious")
 		 
@@ -104,7 +108,7 @@ function getInfo() {
 	}
 	alert("Incorrect Username or Password")
 	alert("If You Dont Have An Account Register One At The Near Bottom Of The Page!\nThank You!\nMysterious")
-    console.log(username + " is not a Username or Password")
+   
 
 }
 	    document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
@@ -133,8 +137,8 @@ body {
     position: relative;
     top: 20%;
     margin: auto;
-    width: 340px;
-    height: 445px;
+    width: 350px;
+    height: 398px;
     border-radius: 0.35em;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -169,7 +173,7 @@ body {
 
 .input {
     margin: auto;
-    width: 240px;
+    width: 250px;
     border-radius: 4px;
     background-color: #373b3d;
     padding: 8px 0px;
