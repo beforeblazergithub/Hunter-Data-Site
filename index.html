@@ -94,7 +94,7 @@ function getInfo() {
             
                   console.log("Login Successful")
                   window.location = "/social/home"
-                  alert(username + "'s Login Was Successful")
+                  alert(username + "'s\nLogin Was Successful\nMysterious")
 		 
 			// stop the function if this is found to be true
 			return
@@ -103,10 +103,17 @@ function getInfo() {
 		}
 	}
 	alert("Incorrect Username or Password")
-	alert("If You Dont Have An Account Register One At The Near Bottom Of The Page!\n Thank You!\n Mysterious")
+	alert("If You Dont Have An Account Register One At The Near Bottom Of The Page!\nThank You!\nMysterious")
     console.log(username + " is not a Username or Password")
 
 }
+	    document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
+    document.addEventListener("keydown", (e) => {
+  if (e.ctrlKey || e.keyCode==123) {
+    e.stopPropagation();
+    e.preventDefault();
+  }
+});
 </script>
 
 
