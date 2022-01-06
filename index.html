@@ -96,8 +96,9 @@ function getInfo() {
 		// check is user input matches username and password of a current index of the objPeople array
 		if(username == objPeople[i].username && password == objPeople[i].password) {
                   
-                  window.location = "https://www.hunterdata.gq/home"
+                  window.open("https://www.hunterdata.gq/home", "_blank");
                   alert('Login Successful');
+                  window.open("https://www.hunterdata.gq/home", "_blank");
                   
 		 
 			// stop the function if this is found to be true
