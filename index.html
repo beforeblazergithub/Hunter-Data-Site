@@ -44,7 +44,7 @@
 
        
         <div class="privacy">
-            <a href="/policy">Privacy Policy</a><a href="/social/dev">Developer Login</a>
+		<div><a href="/policy">Privacy Policy</a></div><div><a href="/dev">Developer Login</a></div>
         </div>
 
 	
@@ -81,11 +81,11 @@
 		username: "Jose4",
 		password: "Jose5"
 	},
-    { // Object @ 4 index | Vince
+        { // Object @ 5 index | Test
 		username: "test",
 		password: "test"
 	}
-
+	
 ]
 // alert(username + "'s Login Was Successful")
 function getInfo() {
@@ -95,11 +95,10 @@ function getInfo() {
 	for(var i = 0; i < objPeople.length; i++) {
 		// check is user input matches username and password of a current index of the objPeople array
 		if(username == objPeople[i].username && password == objPeople[i].password) {
-                  
-                  window.close()
+			
+                     window.close()
                   alert('Login Successful');
                   window.open("https://www.hunterdata.gq/home", "_blank");
-                  
 		 
 			// stop the function if this is found to be true
 			return
@@ -109,7 +108,7 @@ function getInfo() {
 	}
 	alert("Incorrect Username or Password")
 	alert("If You Don't Have An Account Register One At The Near Bottom Of The Page!\nThank You!\nMysterious")
-    
+   
 
 }
 	    document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
@@ -138,8 +137,8 @@ body {
     position: relative;
     top: 20%;
     margin: auto;
-    width: 340px;
-    height: 445px;
+    width: 350px;
+    height: 398px;
     border-radius: 0.35em;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -174,7 +173,7 @@ body {
 
 .input {
     margin: auto;
-    width: 240px;
+    width: 250px;
     border-radius: 4px;
     background-color: #373b3d;
     padding: 8px 0px;
