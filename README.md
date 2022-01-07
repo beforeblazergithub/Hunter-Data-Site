@@ -7,7 +7,7 @@
 
 
 
-**www.hunterdata.gq?**
+**https://hunterdata.gq**
 Use Test Login [Username: test] [Password: test]
 
 
