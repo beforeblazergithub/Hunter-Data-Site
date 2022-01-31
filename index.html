@@ -98,6 +98,7 @@ function getInfo() {
 			
                      window.close()
                   alert('Login Successful');
+			localStorage.setItem("valid_login", 1);
                   window.open("https://www.hunterdata.gq/home", "_blank");
 		 
 			// stop the function if this is found to be true
