@@ -2,7 +2,7 @@
 <html>
 <title>Learning</title>
 <body>
-<iframe src="https://pydoge.herokuapp.com" width="1350px" height="700px" ></iframe>
+<iframe src="https://pydoge.herokuapp.com/course/https://www.google.com/"></iframe>
   </body>
 <body onload="onStart()"></body>
 
@@ -10,7 +10,15 @@
 <script>
 function onStart() {
 javascript:var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }{let window = _____WB$wombat$assign$function_____("window");let self = _____WB$wombat$assign$function_____("self");let document = _____WB$wombat$assign$function_____("document");let location = _____WB$wombat$assign$function_____("location");let top = _____WB$wombat$assign$function_____("top");let parent = _____WB$wombat$assign$function_____("parent");let frames = _____WB$wombat$assign$function_____("frames");let opener = _____WB$wombat$assign$function_____("opener");document.title=prompt('Mysterious Tab Cloak\nOPTIONS:\n\n[1] Gmail Logo\n[2] Google Drive\n[3] New Tab\n[4] {Custom URL}\n[5] Google Translate,\nEnter Tab Title From Above:');var icon=document.querySelector(`link[rel='icon']`);if (!icon) {icon = document.createElement('link');icon.rel='icon';};switch(prompt('Choose new tab icon:\n\n[1] Gmail Logo\n[2] Google Drive\n[3] New Tab\n[4] Custom URL\n[5] Google Translate')){case'1':icon.setAttribute('href','https://visualpharm.com/assets/954/Gmail-595b40b65ba036ed117d4168.svg');break;case'2':icon.setAttribute('href','https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png');break;case'3':icon.setAttribute('href','google.com/favicon.ico');break;case'5':icon.setAttribute('href','https://visualpharm.com/assets/257/Google Translate-595b40b65ba036ed117d4192.svg');break;case'4':icon.setAttribute('href',prompt('Enter Custom Tab Icon URL:'));} document.head.appendChild(icon);}
-}       
+}     
+  document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
+    document.addEventListener("keydown", (e) => {
+  if (e.ctrlKey || e.keyCode==123) {
+    e.stopPropagation();
+    e.preventDefault();
+  }
+});
+  
 </script>
 <style>
   body {
