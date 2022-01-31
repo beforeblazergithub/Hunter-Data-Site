@@ -21,17 +21,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="/home" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
     <a href="/games" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Games</a>
-    <a href="/movies" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Movies</a>
-    <a href="/learning1" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">UNBL0CK</a>
-    <a href="/social" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Social</a>
+    <a href="/learning1" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">You Know</a>
+    <a href="/social" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Chatroom</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="/games" class="w3-bar-item w3-button w3-padding-large">Games</a>
-    <a href="/movies" class="w3-bar-item w3-button w3-padding-large">Movies</a>
-    <a href="/learning" class="w3-bar-item w3-button w3-padding-large">UNBL0CK</a>
-    <a href="/social" class="w3-bar-item w3-button w3-padding-large">Social</a>
+    <a href="/learning" class="w3-bar-item w3-button w3-padding-large">You Know</a>
+    <a href="/social" class="w3-bar-item w3-button w3-padding-large">Chatroom</a>
   </div>
 </div>
 
@@ -41,8 +39,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <h1 class="w3-margin w3-jumbo"><strong>Mysterious</h1></strong>
   <p class="w3-text-gray">Ⓒ2022 H.A.Y.</p>
   
-  <form method="get" action="/learning1">
-    <button class="w3-text-gray" type="submit">New  <strong>UNBL0CK</strong></button>
+  <form method="get" action="/chatroom">
+    <button class="w3-text-gray" type="submit">New  <strong>Chat</strong></button>
 </form>
 </header>
 
@@ -53,7 +51,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <h1>Mysterious Network - Startup</h1>
       
 
-      <p class="w3-text-grey">You are proably thinking that this crazy site is going to be BL0CKED like tommorow but <strong>NO</strong> it won't, if it does you can easily tell us through the forms and we'll simply change the url and email or dm you on Discord the new URL, also for even better security for hacking and teacher avoidence we have some simple and uselful bookmarklets which provide you with page Editors tab Cloakers & other cool stuff (You can read more down below). Also if you have any issues the website's many pages like games the Team will deal with it if you submit it through the forms (You can also submit games of your choice to us if you want). Lastly, and even better you can now pay or donate to the <strong>Mysterious Team</strong> with cash, or you can buy our unBL0CKING products to help you have fun and to us to keep with site up and running.</p>
+      <p class="w3-text-grey">You are proably thinking that this crazy site is going to be destroyed like tommorow but <strong>NO</strong> it won't, if it does you can easily tell us through the forms and we'll simply change the url and email or dm you on Discord the new URL, also for even better security for hacking and teacher avoidence we have some simple and uselful bookmarklets which provide you with page Editors tab Cloakers & other cool stuff (You can read more down below). Also if you have any issues the website's many pages like games the Team will deal with it if you submit it through the forms (You can also submit games of your choice to us if you want). Lastly, and even better you can now pay or donate to the <strong>Mysterious Team</strong> with cash, or you can buy our unBL0CKING products to help you have fun and to us to keep with site up and running.</p>
     </div> 
 
     <div class="w3-third w3-center">
@@ -105,6 +103,27 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+  class Auth {
+	constructor() {
+        document.querySelector("body").style.display = "none";
+		const auth = localStorage.getItem("valid_login");
+		this.validateAuth(auth);
+	}
+
+	validateAuth(auth) {
+		if (valid_login != 1) {
+			window.location.replace("/");
+		} else {
+            document.querySelector("body").style.display = "block";
+		}
+	}
+
+	logOut() {
+		localStorage.removeItem("valid_login");
+		window.location.replace("/");
+	}
+}
+
 </script>
 
 </body>
